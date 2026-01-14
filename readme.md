@@ -22,4 +22,4 @@ A high-performance, browser-based Parametric Equalizer built using the **Web Aud
 - **Buffer Management:** Handling decoded audio data for visualization.
 - **Interpolation:** Linear smoothing of audio parameters to ensure artifact-free processing.
 
-![preview img](/cofi-dela-Amazing-Delicious-Coffee.png)
+![preview img](/Pro-Parametric-EQ-01-14-2026.png)
