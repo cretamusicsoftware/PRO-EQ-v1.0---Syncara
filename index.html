@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Parametric EQ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>PRO-EQ v1.0</h1>
+        <div class="upload-section">
+          <input type="file" id="audio-file" accept="audio/*" />
+          <button id="play-pause" disabled>Play</button>
+        </div>
+      </header>
+
+      <main class="eq-rack">
+        <div class="eq-band" data-type="lowshelf">
+          <label>LOW</label>
+          <div class="slider-group">
+            <input
+              type="range"
+              class="gain-slider"
+              min="-24"
+              max="24"
+              value="0"
+              step="0.1"
+            />
+            <input
+              type="range"
+              class="freq-slider"
+              min="20"
+              max="400"
+              value="80"
+            />
+          </div>
+          <div class="readouts">
+            <span class="gain-val">0dB</span>
+            <span class="freq-val">80Hz</span>
+          </div>
+        </div>
+
+        <div class="eq-band" data-type="peaking">
+          <label>MID</label>
+          <div class="slider-group">
+            <input
+              type="range"
+              class="gain-slider"
+              min="-24"
+              max="24"
+              value="0"
+              step="0.1"
+            />
+            <input
+              type="range"
+              class="freq-slider"
+              min="400"
+              max="5000"
+              value="1000"
+            />
+          </div>
+          <div class="readouts">
+            <span class="gain-val">0dB</span>
+            <span class="freq-val">1kHz</span>
+          </div>
+        </div>
+
+        <div class="eq-band" data-type="highshelf">
+          <label>HIGH</label>
+          <div class="slider-group">
+            <input
+              type="range"
+              class="gain-slider"
+              min="-24"
+              max="24"
+              value="0"
+              step="0.1"
+            />
+            <input
+              type="range"
+              class="freq-slider"
+              min="5000"
+              max="20000"
+              value="12000"
+            />
+          </div>
+          <div class="readouts">
+            <span class="gain-val">0dB</span>
+            <span class="freq-val">12kHz</span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
